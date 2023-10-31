@@ -14,7 +14,7 @@ export default function Edit({
 }) {
   const [note_title, setNote_Title] = useState("");
   const [note_text, setNote_Text] = useState("");
-  const category = activeCategory == false ? 999999999 : activeCategory;
+  const category = activeCategory === false ? 999999999 : activeCategory;
   const handleSubmit = (event) => {
     event.preventDefault();
     var updatedNote = {
@@ -22,7 +22,7 @@ export default function Edit({
       note_title,
       note_text,
     };
-    if (updatedNote.note_title == "" || updatedNote.note_text == "") {
+    if (updatedNote.note_title === "" || updatedNote.note_text === "") {
       console.log("Please enter a Title and Note or change them");
       setActiveNote(false);
     } else {
@@ -75,9 +75,9 @@ export default function Edit({
   return (
     <div
       className={`${
-        activeCategory == false
+        activeCategory === false
           ? "folder edit"
-          : activeNote == false
+          : activeNote === false
           ? "hide"
           : "folder edit"
       }`}
@@ -95,14 +95,14 @@ export default function Edit({
         </div>
       </div>
       <form className="form" onSubmit={handleSubmit}>
-        {activeNote == "creating_new_note" || activeCategory == false ? (
+        {activeNote === "creating_new_note" || activeCategory === false ? (
           <AddNote setNote_Title={setNote_Title} setNote_Text={setNote_Text} />
         ) : (
           notes &&
           notes.map(
             (note) =>
-              activeCategory == note.category &&
-              activeNote == note.id && (
+              activeCategory === note.category &&
+              activeNote === note.id && (
                 <div key={note.id} className="edit_field">
                   <div className="edit_title">
                     <input
@@ -126,14 +126,14 @@ export default function Edit({
         )}
         <div
           className={`${
-            activeNote == "creating_new_note" || activeCategory == false
+            activeNote === "creating_new_note" || activeCategory === false
               ? "btn_right buttons"
               : "buttons"
           }`}
         >
           <div
             className={`${
-              activeNote == "creating_new_note" || activeCategory == false
+              activeNote === "creating_new_note" || activeCategory === false
                 ? "hide"
                 : "create-category delete_btn"
             }`}
