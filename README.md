@@ -26,17 +26,17 @@
 
 ## About The Project
 
-This is a small note app that can save or delete notes, save them in different categories and run on a simple server as its database (JSON-Server) to save data.
+This is a small note app that can add or delete notes in different categories and run on a simple server as its database (JSON-Server) for saving data.
 
 # ![A screenshot of the app ](./notes_app/assets/Note_APP.png)
 
 ### Features
 
-- Can a create category with different notes init
+- Can create categories with different notes in it
 - Add notes or delete them
-- Modify notes and save them in the server
+- Modify notes and save them on the server
 - Search through notes to find the one you want
-- Every data is saved in an file in JSON format
+- Every data is saved in a file in JSON format
 
 ### Technology
 
@@ -64,6 +64,9 @@ git clone -b Note_App https://github.com/Elio-Aliaj/reactjs-interview-task.git
 
 ```shell
 cd .\reactjs-interview-task\notes_app\
+```
+
+```shell
 npm install
 ```
 
@@ -79,21 +82,24 @@ npm start
 
 ```shell
 cd .\notes_app\src\Data\
+```
+
+```shell
 npx json-server --watch db.json --port 8000
 ```
 
-3. The app can ba access in the browser at http://localhost:3000
+3. The app can be accessed in the browser at http://localhost:3000
 
 ## Farther app development
 
 - **To make the app more secure:**
-  - Make a register,login and password
-  - Encrypt the the database
+  - Make a register, login and password
+  - Encrypt the database
   - Create end-to-end encryption
   - Keeping the code up to date
   - Input Validation and Sanitization
 - **Scale to millions of users**
-  - Use a database like Oracle, MySQL, Microsoft SQL Server
+  - Use a database like Oracle, MySQL, or Microsoft SQL Server
   - Three typically common types of database scalability:
     - _Scaling Up_: adding more resources to a single server
     - _Scaling Down_: distributing the database across multiple servers
