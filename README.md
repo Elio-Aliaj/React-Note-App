@@ -7,7 +7,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#a-screenshot-of-the-app">A screenshot of the app</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#technology">Technology<a></li>
       </ul>
@@ -58,21 +57,21 @@ This is a small note app that can save or delete notes, save them in different c
 1. Clone the repository
 
 ```shell
-git clone https://github.com/Elio-Aliaj/reactjs-interview-task.git
+git clone -b Note_App https://github.com/Elio-Aliaj/reactjs-interview-task.git
 ```
 
 2. Install NPM packages
 
 ```shell
+cd .\reactjs-interview-task\notes_app\
 npm install
 ```
 
 ## Usage
 
-1. To run the app, open CMD and locate to the repository:
+1. To run the app:
 
 ```shell
-cd .\notes_app\
 npm start
 ```
 
@@ -103,8 +102,8 @@ npx json-server --watch db.json --port 8000
 
 ## Screenshots
 
-<img src="./notes_app/assets/Default.png" width="500">
-<img src="./notes_app/assets/Create_category.png" width="500">
-<img src="./notes_app/assets/Note_open.png" width="500">
-<img src="./notes_app/assets/Note_Selected.png" width="500">
-<img src="./notes_app/assets/Search.png" width="500">
+<img src="./notes_app/assets/Default.png">
+<img src="./notes_app/assets/Create_category.png">
+<img src="./notes_app/assets/Note_open.png">
+<img src="./notes_app/assets/Note_Selected.png">
+<img src="./notes_app/assets/Search.png">
