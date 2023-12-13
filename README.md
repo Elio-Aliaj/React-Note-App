@@ -1,4 +1,4 @@
-# ![Banner](./notes_app/assets/Banner.png)
+![Banner](./notes_app/assets/Banner.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
